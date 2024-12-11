@@ -36,7 +36,7 @@ nav {
   /* border: 1px solid; */
   display: grid;
   grid-template-columns: 1fr 25%;
-  column-gap: 100px;
+  column-gap: 10%;
   align-items: center;
   margin-bottom: 128px;
   row-gap: 24px;
@@ -46,7 +46,7 @@ nav {
   /* border: 1px solid; */
   display: grid;
   grid-template-columns: 25% 1fr;
-  column-gap: 100px;
+  column-gap: 10%;
   align-items: center;
   margin-bottom: 128px;
   row-gap: 24px;
@@ -85,6 +85,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
+  /* text-align: center; */
   column-gap: 5px;
   row-gap: 20px;
 }
@@ -242,6 +243,7 @@ section {
 
 .logo-apoiadores {
   width: 90%;
+  max-width: 200px;
   aspect-ratio: 1 /1;
 }
 @media screen and (max-width: 970px) {
@@ -284,5 +286,32 @@ section {
   }
   .card-img {
     border-radius: 200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer-logos {
+    grid-column: 2/4;
+    justify-self: end;
+  }
+  .endereço {
+    grid-column: 1/4;
+    grid-row: 2;
+  }
+  .footer-title {
+    grid-column: 1/4;
+    grid-row: 1;
+    justify-self: center;
+  }
+  .siga-nos {
+    text-align: center;
+  }
+  .e-mail {
+    grid-row: 3;
+    grid-column: 2/4;
+    justify-self: end;
+  }
+  .copyright {
+    text-align: center;
   }
 }
