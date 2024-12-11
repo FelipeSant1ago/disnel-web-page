@@ -26,7 +26,7 @@ nav {
 }
 
 .main-container {
-  width: 80%;
+  width: 90%;
   margin: 20px auto;
   /* border: 1px solid;  */
 }
@@ -34,7 +34,7 @@ nav {
 .grid-2-columns {
   /* border: 1px solid; */
   display: grid;
-  grid-template-columns: 1fr 350px;
+  grid-template-columns: 1fr 25%;
   column-gap: 100px;
   align-items: center;
   margin-bottom: 128px;
@@ -44,7 +44,7 @@ nav {
 .grid-2-columns-inv {
   /* border: 1px solid; */
   display: grid;
-  grid-template-columns: 350px 1fr;
+  grid-template-columns: 25% 1fr;
   column-gap: 100px;
   align-items: center;
   margin-bottom: 128px;
@@ -59,10 +59,6 @@ nav {
 }
 .projects-title {
   margin-bottom: 32px;
-}
-.blockchain-project {
-  /* background-color: #101213; */
-  /* background-color: #212529; */
 }
 
 .featured-project {
@@ -88,7 +84,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
-  column-gap: 50px;
+  column-gap: 10%;
   row-gap: 20px;
 }
 .copyright {
@@ -168,20 +164,20 @@ a:visited {
   fill: #212529;
 }
 .paad-logo-colorida {
-  width: 350px;
+  width: 90%;
   grid-column: 2;
   grid-row: 1;
 }
 .bc-img {
-  width: 300px;
-  height: 300px;
+  width: 90%;
+  aspect-ratio: 1 /1;
   grid-column: 1;
   grid-row: 1 / 3;
   /* background-color: #212529; */
 }
 .city-img {
-  width: 300px;
-  height: 300px;
+  width: 90%;
+  aspect-ratio: 1 /1;
   grid-column: 2;
   grid-row: 1 / 3;
 }
@@ -221,8 +217,9 @@ section {
   align-self: center;
 }
 .card-img {
-  height: 200px;
-  width: 200px;
+  width: 60%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
   border-radius: 100px;
   align-self: center;
 }
@@ -243,6 +240,42 @@ section {
 /* footer */
 
 .logo-apoiadores {
-  width: 74px;
-  height: 74px;
+  width: 128px;
+  height: 128px;
+}
+@media screen and (max-width: 970px) {
+  .cards {
+    grid-template-columns: 40% 40%;
+  }
+  .title {
+    display: none;
+  }
+  .project-title-container {
+    grid-column: 1/3;
+    grid-row: 1;
+  }
+  .project-text {
+    grid-column: 1/3;
+    grid-row: 2;
+  }
+  .bc-img {
+    grid-row: 3;
+  }
+  .city-img {
+    grid-row: 3;
+  }
+  .paad-logo-colorida {
+    display: none;
+  }
+  .header-text-container {
+    grid-column: 1 / 3;
+  }
+}
+@media screen and (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .card-img {
+    border-radius: 200px;
+  }
 }
