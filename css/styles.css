@@ -42,6 +42,17 @@ nav {
   row-gap: 24px;
   padding: 20px;
 }
+.grid-2-columns-especial {
+  /* border: 1px solid; */
+  display: grid;
+  /* color: #3d2078; */
+  grid-template-columns: 1fr 35%;
+  column-gap: 10%;
+  align-items: center;
+  margin-bottom: 128px;
+  row-gap: 24px;
+  padding: 20px;
+}
 .grid-2-columns-inv {
   /* border: 1px solid; */
   display: grid;
@@ -98,7 +109,7 @@ footer {
   margin-bottom: 20px;
 }
 .title {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 .header-text {
   color: #212529;
@@ -158,19 +169,20 @@ a:visited {
   grid-column: 1;
 }
 /* Icons e Imagens */
-.paad-logo {
-  width: 64px;
-  height: 64px;
+.disnel-logo {
+  width: 150px;
+  /* height: 128px; */
 }
 .icon {
   fill: #212529;
 }
 .paad-logo-colorida {
-  width: 90%;
+  width: 100%;
   grid-column: 2;
   grid-row: 1;
 }
 .bc-img {
+  justify-self: center;
   width: 90%;
   aspect-ratio: 1 /1;
   grid-column: 1;
@@ -238,6 +250,9 @@ section {
 .card a:hover {
   text-decoration: underline;
 }
+.footer-paragraph {
+  text-align: center;
+}
 
 /* footer */
 
@@ -297,7 +312,11 @@ section {
   .endereço {
     grid-column: 1/4;
     grid-row: 2;
+    /* text-align: center; */
+    /* align-self: center; */
+    /* justify-self: center; */
   }
+
   .footer-title {
     grid-column: 1/4;
     grid-row: 1;
