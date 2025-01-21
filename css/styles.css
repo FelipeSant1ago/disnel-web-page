@@ -294,6 +294,9 @@ section {
   .links {
     display: none;
   }
+  .logo-box {
+    display: none;
+  }
   nav {
     justify-content: center;
   }
@@ -306,6 +309,9 @@ section {
 }
 
 @media screen and (max-width: 480px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
   .footer-logos {
     grid-column: 2/4;
     justify-self: end;
