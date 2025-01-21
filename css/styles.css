@@ -297,6 +297,9 @@ section {
   nav {
     justify-content: center;
   }
+  .links {
+    gap: 15px;
+  }
   .footer-logos {
     grid-column: 2/4;
     justify-self: end;
